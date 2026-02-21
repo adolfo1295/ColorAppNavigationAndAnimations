@@ -46,6 +46,7 @@ val colorList = listOf(
 
 @Composable
 fun ColorListScreen(
+  colorList: List<ColorItem> = emptyList(),
   onColorClick: (String) -> Unit,
 ) {
 

@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ac.colorapp.navigation.BasicNavigation
+import com.ac.colorapp.navigation.advanced.AdvancedNavigation
 import com.ac.colorapp.ui.theme.ColorAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
     enableEdgeToEdge()
     setContent {
       ColorAppTheme {
-        BasicNavigation()
+        AdvancedNavigation()
       }
     }
   }

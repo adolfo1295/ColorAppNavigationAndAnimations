@@ -4,11 +4,18 @@ import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable
 
 @Serializable
-sealed interface AppRoutes: NavKey {
+sealed interface AppRoutes : NavKey {
   @Serializable
-  data object ColorListScreen: AppRoutes
+  data object ColorListScreen : AppRoutes
+
   @Serializable
   data class ColorDetailsScreen(
     val colorName: String,
-  ): AppRoutes
+  ) : AppRoutes
+
+  @Serializable
+  data object FavoritesScreen : AppRoutes
+
+  @Serializable
+  data object SettingsScreen : AppRoutes
 }
